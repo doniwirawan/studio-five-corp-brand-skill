@@ -42,4 +42,4 @@ The logo SVG/PDF/EPS masters and the font files aren't in this repo. The skill l
 
 ## License
 
-The skill text, Markdown and CSS are released under the [MIT License](LICENSE). The Studio Five Corp name, logos and brand identity are trademarks of Studio Five Corp Pte Ltd and are **not** covered by that license. Use them only to make work for Studio Five Corp.
+The skill text, Markdown and CSS are released under the [MIT License](LICENSE). The Studio Five Corp name, logos and brand identity are trademarks of Studio Five Corp Pte Ltd and are **not** covered by that license. Use them only to make work for Studio Five Corp (see [TRADEMARKS.md](TRADEMARKS.md)).
