@@ -1,0 +1,54 @@
+/* Studio Five Corp design tokens, from the Branding Guidelines 2027.
+   Load the fonts from Fontshare (the official source), e.g.:
+   <link rel="stylesheet" href="https://api.fontshare.com/v2/css?f[]=clash-display@500,600,700&f[]=satoshi@400,500,700&display=swap">
+   The Group endorsement label in the website footer uses Inter Regular (Google Fonts). */
+
+:root {
+  /* Colour: five tokens only. No tints, gradients or extra hues. */
+  --sfc-cobalt: #0046AE;   /* Primary: logo, headings, links, primary actions */
+  --sfc-energy: #4CC9F0;   /* Secondary: supporting fields and graphics (Black text on it) */
+  --sfc-lime:   #D4F725;   /* Accent: one selected priority (never reading text) */
+  --sfc-black:  #000000;   /* Body text on White */
+  --sfc-white:  #FFFFFF;   /* Default surface; text on Cobalt or Black */
+
+  /* Type */
+  --sfc-font-display: "Clash Display", "Satoshi", Arial, Helvetica, sans-serif; /* headlines, 500-700 */
+  --sfc-font-body:    "Satoshi", Arial, Helvetica, sans-serif;                  /* body 400, labels/buttons 500-700 */
+  --sfc-font-endorse: "Inter", Arial, Helvetica, sans-serif;                    /* "part of" label only */
+
+  --sfc-track-heading-lg: -0.02em;
+  --sfc-track-heading-sm: -0.01em;
+  --sfc-track-body: 0;
+  --sfc-track-label: 0.06em;   /* uppercase labels */
+
+  --sfc-lh-heading: 1.05;      /* 100-110% */
+  --sfc-lh-body: 1.45;         /* 140-150% */
+  --sfc-lh-caption: 1.35;      /* 130-140% */
+
+  /* Website sizes (desktop) */
+  --sfc-size-display: clamp(40px, 5vw, 80px);  /* desktop 64-80, mobile 40-48 */
+  --sfc-size-h1: clamp(32px, 3.6vw, 56px);     /* desktop 48-56, mobile 32-36 */
+  --sfc-size-h2: clamp(24px, 2.6vw, 40px);     /* desktop 32-40, mobile 24-28 */
+  --sfc-size-body: 18px;                       /* mobile 16-18 */
+  --sfc-size-caption: 14px;                    /* mobile 13-14 */
+
+  /* Spacing: 8-unit scale */
+  --sfc-space-1: 8px;
+  --sfc-space-2: 16px;
+  --sfc-space-3: 24px;
+  --sfc-space-4: 32px;
+  --sfc-space-5: 48px;
+  --sfc-space-6: 64px;
+  --sfc-space-7: 96px;
+
+  /* Layout */
+  --sfc-web-gutter: 24px;        /* 24-32 desktop */
+  --sfc-web-side: 64px;          /* 64-80 desktop; 16-24 mobile (24 in the footer) */
+  --sfc-logo-horizontal-min: 240px;
+  --sfc-logo-primary-min: 160px;
+  --sfc-logo-symbol-min-h: 24px;
+}
+
+/* Focus rings: Cobalt with a White gap on White; White with a dark gap on Cobalt. */
+.sfc-on-white :focus-visible { outline: 2px solid var(--sfc-cobalt); outline-offset: 2px; box-shadow: 0 0 0 2px var(--sfc-white); }
+.sfc-on-cobalt :focus-visible { outline: 2px solid var(--sfc-white); outline-offset: 2px; box-shadow: 0 0 0 2px var(--sfc-black); }
